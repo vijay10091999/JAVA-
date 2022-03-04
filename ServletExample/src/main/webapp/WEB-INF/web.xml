@@ -1,0 +1,132 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+ <web-app>
+ <error-page>
+ <error-code>404</error-code>
+ <location>/ShowError404</location>
+ </error-page>
+<display-name>Archetype Created Web Application</display-name>
+
+  
+  <!-- servlet Declarartions -->
+  <servlet>
+  <servlet-name> first</servlet-name>
+  <servlet-class>com.servlet.FirstServlet</servlet-class>
+  </servlet>
+  
+  <!-- Mapping -->
+  <servlet-mapping>
+  <servlet-name>first</servlet-name>
+  <url-pattern>/web</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name> second</servlet-name>
+  <servlet-class>com.servlet.SecondServlet</servlet-class>
+  </servlet>
+  
+  <!-- Mapping -->
+  <servlet-mapping>
+  <servlet-name>second</servlet-name>
+  <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name> Third</servlet-name>
+  <servlet-class>com.httpservlet.MyServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>FirstServlet</servlet-name>
+    <servlet-class>com.attribute.FirstServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SecondServlet</servlet-name>
+  	<display-name>SecondServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.attribute.SecondServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Servlet1</servlet-name>
+  	<display-name>Servlet1</display-name>
+  	<description></description>
+  	<servlet-class>com.cookies.Servlet1</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Servlet2</servlet-name>
+  	<display-name>Servlet2</display-name>
+  	<description></description>
+  	<servlet-class>com.cookies.Servlet2</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ServletFirst</servlet-name>
+  	<display-name>ServletFirst</display-name>
+  	<description></description>
+  	<servlet-class>com.urlrewriting.ServletFirst</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ServletSecond</servlet-name>
+  	<display-name>ServletSecond</display-name>
+  	<description></description>
+  	<servlet-class>com.urlrewriting.ServletSecond</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>about</servlet-name>
+ 
+  	<jsp-file>/index.jsp </jsp-file>
+  </servlet>
+  
+  <!-- Mapping -->
+  <servlet-mapping>
+  <servlet-name>Third</servlet-name>
+  <url-pattern>/third</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FirstServlet</servlet-name>
+  	<url-pattern>/FirstServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SecondServlet</servlet-name>
+  	<url-pattern>/SecondServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Servlet1</servlet-name>
+  	<url-pattern>/Servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Servlet2</servlet-name>
+  	<url-pattern>/Servlet2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ServletFirst</servlet-name>
+  	<url-pattern>/ServletFirst</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>about</servlet-name>
+  <url-pattern>/about</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet-mapping>
+  	<servlet-name>ServletSecond</servlet-name>
+  	<url-pattern>/ServletSecond</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+	 <filter>
+		<filter-name>MyFilter</filter-name>
+		<filter-class>com.servlet.MyFilter</filter-class>
+	 </filter>
+	<filter-mapping>
+		<filter-name>MyFilter</filter-name>
+		<url-pattern>/second</url-pattern>
+	</filter-mapping>
+
+  
+  
+</web-app>

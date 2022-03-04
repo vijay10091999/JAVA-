@@ -1,0 +1,56 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<servlet>
+		<servlet-name>Test</servlet-name>
+		<display-name>Test</display-name>
+		<description></description>
+		<servlet-class>com.startwithjsp.Test</servlet-class>
+	</servlet>
+	 <servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/vtest</url-pattern>
+	</servlet-mapping>
+  
+<!--   <servlet>
+	  <servlet-name>abc</servlet-name>
+	  <servlet-class>com.cookies.AddServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	   <servlet-name>abc</servlet-name>
+	  <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>pqr</servlet-name>
+	  <servlet-class>com.cookies.SqServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	   <servlet-name>pqr</servlet-name>
+	  <url-pattern>/sq</url-pattern>
+  </servlet-mapping>  -->
+  
+  <!-- <servlet>
+	  <servlet-name>xyz</servlet-name>
+	  <servlet-class>com.ServletConfig_ServletContext.MyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	   <servlet-name>xyz</servlet-name>
+	  <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  <param-name>name</param-name>
+  <param-value>Vijay</param-value>
+  </context-param>
+  
+   <context-param>
+  <param-name>Phone</param-name>
+  <param-value>Redmi</param-value>
+  </context-param> -->
+</web-app>
